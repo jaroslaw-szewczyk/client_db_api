@@ -18,7 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 
-mongoose.connect('mongodb://0.0.0.0:27017/NewWaveDB');
+mongoose.connect('mongodb+srv://jaroslawszewczyk:B8hM729BU4VUyhay@cluster0.7ghve.mongodb.net/NewWaveDB?retryWrites=true&w=majority&appName=Cluster0');
 const db = mongoose.connection;
 
 app.use('/api/seats', seatsRoutes);
